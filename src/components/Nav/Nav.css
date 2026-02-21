@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Inter";
+  
+    background: #0b0b0c;
+    color: rgba(255, 255, 255, 0.92);
+  }
+  
+  /* container */
+  .container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+  
+  /* header */
+  .site-header {
+    position: absolute;
+    inset: 0 0 auto 0;
+    z-index: 5;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+    gap: 16px;
+  }
+  
+  .brand {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .logo-circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(202, 164, 70, 0.55);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  
+
+  
+  .theme-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .theme-btn:hover {
+    border-color: rgba(202, 164, 70, 0.55);
+  }
