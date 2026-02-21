@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Inter";
+  
+    background: #0b0b0c;
+    color: rgba(255, 255, 255, 0.92);
+  }
+
+
+  .stat-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 14px;
+  
+    display: grid;
+    place-items: center;
+  
+    border-radius: 999px;
+    background: rgba(202, 164, 70, 0.12);
+    border: 1px solid rgba(202, 164, 70, 0.35);
+    color: #caa446;
+
+  }
+  
+  .stat-number {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: 15px;
+  }
+  
+  .stat-label {
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    color: rgba(255, 255, 255, 0.65);
+  }
