@@ -1,50 +1,59 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    height: 100%;
-  }
-  
-  body {
-    margin: 0;
-    font-family: "Inter";
-  
-    background: #151515;
-    color: rgba(255, 255, 255, 0.92);
-  }
+
 
 .stats {
-    padding: 70px 0;
-    background: #0b0b0c;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-  }
-  
+  padding: 70px 0;
+  transition: 0.3s ease;
+}
+
+.stats-container {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+
+  text-align: center;
+}
+
+
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.stat-number {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.stat-label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+
+@media (max-width: 900px) {
   .stats-container {
-    width: min(1100px, calc(100% - 40px));
-    margin: 0 auto;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 120px;
-    text-align: center;
+    gap: 50px;
   }
-  
-  
-  
-  /* responsive */
-  @media (max-width: 900px) {
-    .stats-container {
-      gap: 50px;
-    }
+}
+
+@media (max-width: 650px) {
+  .stats-container {
+    flex-direction: column;
+    gap: 26px;
   }
-  
-  @media (max-width: 650px) {
-    .stats-container {
-      flex-direction: column;
-      gap: 26px;
-    }
-  }
+}
   

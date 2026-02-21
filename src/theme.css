@@ -1,0 +1,331 @@
+
+.app {
+    min-height: 100vh;
+    transition: 0.3s ease;
+  }
+  
+
+  .app.dark {
+    --bg: #151515;
+    --text: #ffffff;
+    --muted: rgba(255,255,255,0.7);
+  
+    --card-bg: #141414;
+    --border: rgba(255,255,255,0.1);
+    --accent: #caa446;
+  }
+  
+
+  .app.light {
+    --bg: #f5f5f5;
+    --text: #111111;
+    --muted: rgba(0,0,0,0.6);
+  
+    --card-bg: #ffffff;
+    --border: rgba(0,0,0,0.1);
+    --accent: #caa446;
+  }
+  
+
+  .app {
+    background: var(--bg);
+    color: var(--text);
+  }
+
+
+.app.dark .hero {
+    background-image: url("./assets/_ (1) 1.png");
+  }
+  
+
+  .app.light .hero {
+    background-image: url("./assets/Gemini_Generated_Image_th16s7th16s7th16 1.png");
+  }
+
+
+
+.app.dark .stats {
+    background: #0b0b0c;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  
+
+  .app.light .stats {
+    background: #f5f5f5;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  
+  
+  .app.light .stat-label {
+    color: #555;
+  }
+  
+  .app.light .stat-number {
+    color: #111;
+  }
+
+
+
+
+.app.dark .about {
+    background: #0b0b0c;
+  }
+  
+  .app.dark .about-title {
+    color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .app.dark .about-text {
+    color: rgba(255, 255, 255, 0.80);
+  }
+  
+
+  .app.light .about {
+    background: #f5f5f5;
+  }
+  
+  .app.light .about-title {
+    color: rgba(10, 10, 12, 0.92);
+  }
+  
+  .app.light .about-text {
+    color: rgba(10, 10, 12, 0.70);
+  }
+
+  .app.dark .about-pill {
+    background: rgba(255, 214, 82, 0.10);
+    color: #FFE283;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .app.light .about-pill {
+    background: rgba(202, 164, 70, 0.15);
+    color: #9c7a1a;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+
+  .app.dark .about-list li {
+    color: rgba(255, 255, 255, 0.90);
+  }
+  
+  .app.dark .about-list li::before {
+    color: #caa446;
+    background: rgba(202, 164, 70, 0.12);
+    border: 1px solid rgba(202, 164, 70, 0.35);
+  }
+
+
+  .app.light .about-list li {
+    color: rgba(20, 20, 25, 0.85);
+  }
+  
+  .app.light .about-list li::before {
+    color: #9c7a1a;
+    background: rgba(202, 164, 70, 0.20);
+    border: 1px solid rgba(202, 164, 70, 0.45);
+  }
+
+
+.app.dark .team {
+    background: #151515;
+    color: rgba(255, 255, 255, 0.92);
+  }
+  
+
+  .app.light .team {
+    background: #f5f5f5;
+    color: rgba(10, 10, 12, 0.92);
+  }
+
+
+  .app.dark .team-sub {
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .app.light .team-sub {
+    color: rgba(20, 20, 25, 0.65);
+  }
+
+
+
+.app.dark .cases {
+    background: #151515;
+    color: rgba(255, 255, 255, 0.92);
+  }
+  
+  .app.dark .cases-pill {
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(202, 164, 70, 0.12);
+    border: 1px solid rgba(202, 164, 70, 0.3);
+  }
+  
+  .app.dark .cases-sub {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  .app.dark .case-card {
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
+  }
+  
+
+  .app.light .cases {
+    background: #f5f5f5;
+    color: rgba(10, 10, 12, 0.92);
+  }
+  
+  .app.light .cases-pill {
+    color: rgba(20, 20, 25, 0.85);
+    background: rgba(202, 164, 70, 0.18);
+    border: 1px solid rgba(202, 164, 70, 0.35);
+  }
+  
+  .app.light .cases-sub {
+    color: rgba(20, 20, 25, 0.65);
+  }
+  
+  .app.light .case-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  }
+
+
+.app.dark .faq {
+    background: #151515;
+    color: rgba(255, 255, 255, 0.92);
+  }
+  
+  .app.dark .faq-pill {
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(202, 164, 70, 0.12);
+    border: 1px solid rgba(202, 164, 70, 0.3);
+  }
+  
+  .app.dark .faq-sub {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  .app.dark .faq-item {
+    border: 1px solid rgba(202, 164, 70, 0.55);
+    background: rgba(0, 0, 0, 0.35);
+  }
+  
+  .app.dark .faq-q {
+    color: rgba(255, 255, 255, 0.92);
+  }
+  
+  .app.dark .faq-arrow {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .app.dark .faq-a {
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  
+
+  .app.light .faq {
+    background: #f5f5f5;
+    color: rgba(10, 10, 12, 0.92);
+  }
+  
+  .app.light .faq-pill {
+    color: rgba(20, 20, 25, 0.85);
+    background: rgba(202, 164, 70, 0.18);
+    border: 1px solid rgba(202, 164, 70, 0.35);
+  }
+  
+  .app.light .faq-sub {
+    color: rgba(20, 20, 25, 0.65);
+  }
+  
+  .app.light .faq-item {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #ffffff;
+  }
+  
+  .app.light .faq-q {
+    color: rgba(20, 20, 25, 0.92);
+  }
+  
+  .app.light .faq-q:hover {
+    background: rgba(0, 0, 0, 0.03);
+  }
+  
+  .app.light .faq-arrow {
+    color: rgba(20, 20, 25, 0.65);
+  }
+  
+  .app.light .faq-a {
+    color: rgba(20, 20, 25, 0.75);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  /* =========================
+   Section7 Contact - Dark
+========================= */
+.app.dark .contact {
+    background: #151515;
+    color: rgba(255, 255, 255, 0.92);
+  }
+  
+  .app.dark .contact-sub {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  .app.dark .contact-form {
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
+  }
+  
+  .app.dark .field label {
+    color: rgba(20, 26, 34, 0.72);
+  }
+  
+  .app.dark .field input,
+  .app.dark .field textarea {
+    background: #fff;
+    color: rgba(20, 26, 34, 0.9);
+    border: 1px solid rgba(20, 26, 34, 0.14);
+  }
+  
+  .app.dark .contact-btn {
+    background: #caa446;
+    color: #111;
+  }
+  
+
+  .app.light .contact {
+    background: #f5f5f5;
+    color: rgba(10, 10, 12, 0.92);
+  }
+  
+  .app.light .contact-sub {
+    color: rgba(20, 20, 25, 0.65);
+  }
+  
+  .app.light .contact-form {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  }
+  
+  .app.light .field label {
+    color: rgba(20, 26, 34, 0.72);
+  }
+  
+  .app.light .field input,
+  .app.light .field textarea {
+    background: #fff;
+    color: rgba(20, 26, 34, 0.92);
+    border: 1px solid rgba(20, 26, 34, 0.16);
+  }
+  
+  .app.light .contact-btn {
+    background: #caa446;
+    color: #111;
+  }

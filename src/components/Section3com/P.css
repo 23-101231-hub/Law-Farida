@@ -1,26 +1,26 @@
 .about-list li {
-    color: rgba(255, 255, 255, 0.90);
-    font-size: 16px;
-    line-height: 1.6;
-  
-    display: grid;
-    grid-template-columns: 18px 1fr;
-    align-items: start;
-    column-gap: 10px;
-  }
-  
-  .about-list li::before {
-    content: "✓";
-    width: 18px;
-    height: 18px;
-    border-radius: 999px;
-  
-    display: grid;
-    place-items: center;
-  
-    color: #caa446;
-    background: rgba(202, 164, 70, 0.12);
-    border: 1px solid rgba(202, 164, 70, 0.35);
-    font-size: 12px;
-    margin-top: 2px;
-  }
+  font-size: 16px;
+  line-height: 1.6;
+
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  align-items: start;
+  column-gap: 10px;
+
+  transition: 0.3s ease;
+}
+
+.about-list li::before {
+  content: "✓";
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 12px;
+  margin-top: 2px;
+
+  transition: 0.3s ease;
+}
