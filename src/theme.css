@@ -2,330 +2,327 @@
 .app {
     min-height: 100vh;
     transition: 0.3s ease;
+    background: var(--page-bg);
+    color: var(--text);
   }
   
 
   .app.dark {
-    --bg: #151515;
-    --text: #ffffff;
-    --muted: rgba(255,255,255,0.7);
+
+    --page-bg: #151515;
+    --section-dark: #0b0b0c;
+    --section-mid: #151515;
   
-    --card-bg: #141414;
-    --border: rgba(255,255,255,0.1);
+    
+    --text: rgba(255, 255, 255, 0.92);
+    --title: rgba(255, 255, 255, 0.95);
+    --muted: rgba(255, 255, 255, 0.65);
+  
+  
     --accent: #caa446;
-  }
+    --accent-2: #ffe283;
+  
+   
+    --border-soft: rgba(255, 255, 255, 0.08);
+    --border-mid: rgba(255, 255, 255, 0.10);
   
 
-  .app.light {
-    --bg: #f5f5f5;
-    --text: #111111;
-    --muted: rgba(0,0,0,0.6);
-  
     --card-bg: #ffffff;
-    --border: rgba(0,0,0,0.1);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --card-shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
+  
+
+    --pill-bg: rgba(202, 164, 70, 0.12);
+    --pill-border: rgba(202, 164, 70, 0.3);
+    --pill-text: rgba(255, 255, 255, 0.85);
+  
+
+    --about-pill-bg: rgba(255, 214, 82, 0.10);
+    --about-pill-text: #FFE283;
+    --about-pill-border: rgba(255, 255, 255, 0.08);
+  
+
+    --check-bg: rgba(202, 164, 70, 0.12);
+    --check-border: rgba(202, 164, 70, 0.35);
+    --check-text: #caa446;
+  
+
+    --faq-item-bg: rgba(0, 0, 0, 0.35);
+    --faq-item-border: rgba(202, 164, 70, 0.55);
+    --faq-hover: rgba(255, 255, 255, 0.03);
+    --faq-divider: rgba(255, 255, 255, 0.06);
+    --faq-arrow: rgba(255, 255, 255, 0.75);
+  
+
+    --label: rgba(20, 26, 34, 0.72);
+    --input-bg: #ffffff;
+    --input-text: rgba(20, 26, 34, 0.9);
+    --input-border: rgba(20, 26, 34, 0.14);
+  
+
+    --footer-bg: #0b0b0c;
+    --footer-border-top: transparent;
+    --footer-desc: rgba(255, 255, 255, 0.6);
+    --footer-divider: rgba(255, 255, 255, 0.08);
+    --footer-small: rgba(255, 255, 255, 0.55);
+  
+    --footer-soc-bg: rgba(0, 0, 0, 0.25);
+    --footer-soc-border: rgba(255, 255, 255, 0.18);
+    --footer-soc-text: rgba(255, 255, 255, 0.8);
+    --footer-soc-hover: rgba(255, 255, 255, 0.95);
+  
+    --footer-link: rgba(255, 255, 255, 0.62);
+    --footer-link-hover: rgba(255, 255, 255, 0.9);
+
+    --stat-icon-bg: rgba(202, 164, 70, 0.12);
+--stat-icon-border: rgba(202, 164, 70, 0.35);
+--stat-icon-color: #caa446;
+
+--stat-number: rgba(255, 255, 255, 0.92);
+--stat-label: rgba(255, 255, 255, 0.65);
+  }
+  
+  .app.light {
+
+    --page-bg: #f5f5f5;
+    --section-dark: #f5f5f5;
+    --section-mid: #f5f5f5;
+  
+ 
+    --text: rgba(10, 10, 12, 0.92);
+    --title: rgba(10, 10, 12, 0.92);
+    --muted: rgba(20, 20, 25, 0.65);
+  
+
     --accent: #caa446;
+    --accent-2: #9c7a1a;
+  
+
+    --border-soft: rgba(0, 0, 0, 0.08);
+    --border-mid: rgba(0, 0, 0, 0.10);
+  
+
+    --card-bg: #ffffff;
+    --card-border: rgba(0, 0, 0, 0.08);
+    --card-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  
+
+    --pill-bg: rgba(202, 164, 70, 0.18);
+    --pill-border: rgba(202, 164, 70, 0.35);
+    --pill-text: rgba(20, 20, 25, 0.85);
+  
+
+    --about-pill-bg: rgba(202, 164, 70, 0.15);
+    --about-pill-text: #9c7a1a;
+    --about-pill-border: rgba(0, 0, 0, 0.08);
+  
+   
+    --check-bg: rgba(202, 164, 70, 0.20);
+    --check-border: rgba(202, 164, 70, 0.45);
+    --check-text: #9c7a1a;
+  
+
+    --faq-item-bg: #ffffff;
+    --faq-item-border: rgba(0, 0, 0, 0.10);
+    --faq-hover: rgba(0, 0, 0, 0.03);
+    --faq-divider: rgba(0, 0, 0, 0.08);
+    --faq-arrow: rgba(20, 20, 25, 0.65);
+  
+
+    --label: rgba(20, 26, 34, 0.72);
+    --input-bg: #ffffff;
+    --input-text: rgba(20, 26, 34, 0.92);
+    --input-border: rgba(20, 26, 34, 0.16);
+  
+
+    --footer-bg: #ffffff;
+    --footer-border-top: 1px solid rgba(0, 0, 0, 0.08);
+    --footer-desc: rgba(20, 20, 25, 0.65);
+    --footer-divider: rgba(0, 0, 0, 0.08);
+    --footer-small: rgba(20, 20, 25, 0.55);
+  
+    --footer-soc-bg: rgba(0, 0, 0, 0.04);
+    --footer-soc-border: rgba(0, 0, 0, 0.14);
+    --footer-soc-text: rgba(20, 20, 25, 0.7);
+    --footer-soc-hover: rgba(20, 20, 25, 0.92);
+  
+    --footer-link: rgba(20, 20, 25, 0.62);
+    --footer-link-hover: rgba(20, 20, 25, 0.9);
+
+    --stat-icon-bg: rgba(202, 164, 70, 0.18);
+--stat-icon-border: rgba(202, 164, 70, 0.45);
+--stat-icon-color: #9c7a1a;
+
+--stat-number: rgba(20, 20, 25, 0.92);
+--stat-label: rgba(20, 20, 25, 0.65);
   }
   
 
-  .app {
-    background: var(--bg);
-    color: var(--text);
-  }
-
-
-.app.dark .hero {
+  .app.dark .hero {
     background-image: url("./assets/_ (1) 1.png");
   }
   
-
   .app.light .hero {
     background-image: url("./assets/Gemini_Generated_Image_th16s7th16s7th16 1.png");
   }
-
-
-
-.app.dark .stats {
-    background: #0b0b0c;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-  }
   
 
-  .app.light .stats {
-    background: #f5f5f5;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  .stats {
+    background: var(--section-dark);
+    border-top: 1px solid var(--faq-divider);
   }
   
-  
-  .app.light .stat-label {
-    color: #555;
+  .about {
+    background: var(--section-dark);
   }
   
-  .app.light .stat-number {
-    color: #111;
-  }
-
-
-
-
-.app.dark .about {
-    background: #0b0b0c;
-  }
-  
-  .app.dark .about-title {
-    color: rgba(255, 255, 255, 0.95);
-  }
-  
-  .app.dark .about-text {
-    color: rgba(255, 255, 255, 0.80);
+  .team,
+  .cases,
+  .faq,
+  .contact {
+    background: var(--section-mid);
+    color: var(--text);
   }
   
 
-  .app.light .about {
-    background: #f5f5f5;
+  .about-title,
+  .cases-title,
+  .faq-title,
+  .contact-title,
+  .team-title {
+    color: var(--title);
   }
   
-  .app.light .about-title {
-    color: rgba(10, 10, 12, 0.92);
-  }
-  
-  .app.light .about-text {
-    color: rgba(10, 10, 12, 0.70);
-  }
-
-  .app.dark .about-pill {
-    background: rgba(255, 214, 82, 0.10);
-    color: #FFE283;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .app.light .about-pill {
-    background: rgba(202, 164, 70, 0.15);
-    color: #9c7a1a;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-  }
-
-
-  .app.dark .about-list li {
-    color: rgba(255, 255, 255, 0.90);
-  }
-  
-  .app.dark .about-list li::before {
-    color: #caa446;
-    background: rgba(202, 164, 70, 0.12);
-    border: 1px solid rgba(202, 164, 70, 0.35);
-  }
-
-
-  .app.light .about-list li {
-    color: rgba(20, 20, 25, 0.85);
-  }
-  
-  .app.light .about-list li::before {
-    color: #9c7a1a;
-    background: rgba(202, 164, 70, 0.20);
-    border: 1px solid rgba(202, 164, 70, 0.45);
-  }
-
-
-.app.dark .team {
-    background: #151515;
-    color: rgba(255, 255, 255, 0.92);
+  .about-text,
+  .team-sub,
+  .cases-sub,
+  .faq-sub,
+  .contact-sub {
+    color: var(--muted);
   }
   
 
-  .app.light .team {
-    background: #f5f5f5;
-    color: rgba(10, 10, 12, 0.92);
-  }
-
-
-  .app.dark .team-sub {
-    color: rgba(255, 255, 255, 0.65);
-  }
-
-  .app.light .team-sub {
-    color: rgba(20, 20, 25, 0.65);
-  }
-
-
-
-.app.dark .cases {
-    background: #151515;
-    color: rgba(255, 255, 255, 0.92);
+  .cases-pill,
+  .faq-pill {
+    color: var(--pill-text);
+    background: var(--pill-bg);
+    border: 1px solid var(--pill-border);
   }
   
-  .app.dark .cases-pill {
-    color: rgba(255, 255, 255, 0.85);
-    background: rgba(202, 164, 70, 0.12);
-    border: 1px solid rgba(202, 164, 70, 0.3);
-  }
-  
-  .app.dark .cases-sub {
-    color: rgba(255, 255, 255, 0.65);
-  }
-  
-  .app.dark .case-card {
-    background: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
+  .about-pill {
+    background: var(--about-pill-bg);
+    color: var(--about-pill-text);
+    border: 1px solid var(--about-pill-border);
   }
   
 
-  .app.light .cases {
-    background: #f5f5f5;
-    color: rgba(10, 10, 12, 0.92);
+  .about-list li {
+    color: var(--text);
   }
   
-  .app.light .cases-pill {
-    color: rgba(20, 20, 25, 0.85);
-    background: rgba(202, 164, 70, 0.18);
-    border: 1px solid rgba(202, 164, 70, 0.35);
-  }
-  
-  .app.light .cases-sub {
-    color: rgba(20, 20, 25, 0.65);
-  }
-  
-  .app.light .case-card {
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
-  }
-
-
-.app.dark .faq {
-    background: #151515;
-    color: rgba(255, 255, 255, 0.92);
-  }
-  
-  .app.dark .faq-pill {
-    color: rgba(255, 255, 255, 0.85);
-    background: rgba(202, 164, 70, 0.12);
-    border: 1px solid rgba(202, 164, 70, 0.3);
-  }
-  
-  .app.dark .faq-sub {
-    color: rgba(255, 255, 255, 0.65);
-  }
-  
-  .app.dark .faq-item {
-    border: 1px solid rgba(202, 164, 70, 0.55);
-    background: rgba(0, 0, 0, 0.35);
-  }
-  
-  .app.dark .faq-q {
-    color: rgba(255, 255, 255, 0.92);
-  }
-  
-  .app.dark .faq-arrow {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  
-  .app.dark .faq-a {
-    color: rgba(255, 255, 255, 0.7);
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  .about-list li::before {
+    color: var(--check-text);
+    background: var(--check-bg);
+    border: 1px solid var(--check-border);
   }
   
 
-  .app.light .faq {
-    background: #f5f5f5;
-    color: rgba(10, 10, 12, 0.92);
+  .case-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--card-shadow);
   }
   
-  .app.light .faq-pill {
-    color: rgba(20, 20, 25, 0.85);
-    background: rgba(202, 164, 70, 0.18);
-    border: 1px solid rgba(202, 164, 70, 0.35);
-  }
-  
-  .app.light .faq-sub {
-    color: rgba(20, 20, 25, 0.65);
-  }
-  
-  .app.light .faq-item {
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    background: #ffffff;
-  }
-  
-  .app.light .faq-q {
-    color: rgba(20, 20, 25, 0.92);
-  }
-  
-  .app.light .faq-q:hover {
-    background: rgba(0, 0, 0, 0.03);
-  }
-  
-  .app.light .faq-arrow {
-    color: rgba(20, 20, 25, 0.65);
-  }
-  
-  .app.light .faq-a {
-    color: rgba(20, 20, 25, 0.75);
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-  }
 
-  /* =========================
-   Section7 Contact - Dark
-========================= */
-.app.dark .contact {
-    background: #151515;
-    color: rgba(255, 255, 255, 0.92);
+  .faq-item {
+    background: var(--faq-item-bg);
+    border: 1px solid var(--faq-item-border);
   }
   
-  .app.dark .contact-sub {
-    color: rgba(255, 255, 255, 0.65);
+  .faq-q {
+    color: var(--text);
   }
   
-  .app.dark .contact-form {
-    background: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
+  .faq-q:hover {
+    background: var(--faq-hover);
   }
   
-  .app.dark .field label {
-    color: rgba(20, 26, 34, 0.72);
+  .faq-arrow {
+    color: var(--faq-arrow);
   }
   
-  .app.dark .field input,
-  .app.dark .field textarea {
-    background: #fff;
-    color: rgba(20, 26, 34, 0.9);
-    border: 1px solid rgba(20, 26, 34, 0.14);
+  .faq-a {
+    color: var(--muted);
+    border-top: 1px solid var(--faq-divider);
   }
   
-  .app.dark .contact-btn {
-    background: #caa446;
+
+  .contact-form {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--card-shadow);
+  }
+  
+  .field label {
+    color: var(--label);
+  }
+  
+  .field input,
+  .field textarea {
+    background: var(--input-bg);
+    color: var(--input-text);
+    border: 1px solid var(--input-border);
+  }
+  
+  .contact-btn {
+    background: var(--accent);
     color: #111;
   }
   
 
-  .app.light .contact {
-    background: #f5f5f5;
-    color: rgba(10, 10, 12, 0.92);
+  .footer {
+    background: var(--footer-bg);
+    color: var(--text);
+    border-top: var(--footer-border-top);
   }
   
-  .app.light .contact-sub {
-    color: rgba(20, 20, 25, 0.65);
+  .brand-name {
+    color: var(--title);
   }
   
-  .app.light .contact-form {
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  .brand-desc {
+    color: var(--footer-desc);
   }
   
-  .app.light .field label {
-    color: rgba(20, 26, 34, 0.72);
+  .footer-divider {
+    background: var(--footer-divider);
   }
   
-  .app.light .field input,
-  .app.light .field textarea {
-    background: #fff;
-    color: rgba(20, 26, 34, 0.92);
-    border: 1px solid rgba(20, 26, 34, 0.16);
+  .copy,
+  .note {
+    color: var(--footer-small);
   }
   
-  .app.light .contact-btn {
-    background: #caa446;
-    color: #111;
+  .footer-title {
+    color: var(--title);
+  }
+  
+  .footer-list a {
+    color: var(--footer-link);
+  }
+  
+  .footer-list a:hover {
+    color: var(--footer-link-hover);
+  }
+  
+
+  .footer .soc {
+    border: 1px solid var(--footer-soc-border);
+    color: var(--footer-soc-text);
+    background: var(--footer-soc-bg);
+  }
+  
+  .footer .soc:hover {
+    border-color: rgba(202, 164, 70, 0.6);
+    color: var(--footer-soc-hover);
   }

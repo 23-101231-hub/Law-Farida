@@ -19,7 +19,7 @@ const Section3 = () => {
       
             <p className="about-text">
               Our team of seasoned attorneys brings deep expertise across multiple practice areas,
-              ensuring comprehensive support for our clients’ most complex legal challenges. We believe
+              ensuring comprehensive support for our clients' most complex legal challenges. We believe
               in building lasting relationships based on trust, transparency, and tangible results.
             </p>
       

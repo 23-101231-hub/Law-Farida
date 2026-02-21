@@ -6,15 +6,15 @@ import icon20 from "../assets/icon2.png";
 import icon21 from "../assets/icon21.png"
 
 const Section5 = () => {
-    return ( <section class="cases">
-        <div class="cases-container">
+    return ( <section className="cases">
+        <div className="cases-container">
         <Tsp
   pill="Success Stories"
   title="Case Studies & Achievements"
   sub="Real results for real clients across diverse legal challenges"
 />
       
-          <div class="cases-list">
+          <div className="cases-list">
           
           <Card2
   s="case-card"

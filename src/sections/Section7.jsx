@@ -39,8 +39,8 @@ const Section7 = () => {
       title: "Hours",
       text: (
         <>
-          Mon–Fri: 9:00 AM – 6:00 PM <br />
-          Sat: 10:00 AM – 2:00 PM
+          Mon-Fri: 9:00 AM - 6:00 PM <br />
+          Sat: 10:00 AM - 2:00 PM
         </>
       )
     }
@@ -115,7 +115,7 @@ const Section7 = () => {
       return;
     }
 
-    // هنا مكان إرسال البيانات للسيرفر لو عندك API
+  
     setStatus("success");
 
     setForm({

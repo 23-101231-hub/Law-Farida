@@ -41,7 +41,7 @@ const Footer = () => {
 
         <div className="footer-grid">
 
-          {/* Brand */}
+      
           <div className="footer-brand">
             <div className="brand-row">
               <img src={logo} alt="Sterling and Partners logo" />
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Dynamic Columns */}
+      
           {footerData.map((section, index) => (
             <Footertext
               key={index}

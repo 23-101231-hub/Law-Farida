@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Nav.css";
 import img1 from "../../assets/logo.png";
+import sun from "../../assets/solar_sun-outline.png";
+import moon from "../../assets/Icon.png";
 import Navtext from './Navtext';
 
 const Nav = (props) => {
@@ -35,7 +37,11 @@ const Nav = (props) => {
           onClick={handleTheme}
           aria-label="Toggle theme"
         >
-          {props.theme === "dark" ? "☀️" : "🌙"}
+          <img
+            src={props.theme === "dark" ? sun : moon}
+            alt="Theme Icon"
+            className="theme-icon"
+          />
         </button>
 
       </div>
