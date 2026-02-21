@@ -1,0 +1,11 @@
+.about-pill {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 16777200px;
+    background: rgba(255, 214, 82, 0.10);
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #FFE283;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 18px;
+  }
