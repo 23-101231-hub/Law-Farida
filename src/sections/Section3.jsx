@@ -9,7 +9,8 @@ const Section3 = () => {
         <div className="about-container">
        
           <div className="about-left">
-           <Title />
+          <Title s="about-pill" text="About Our Firm" />
+
       
             <h2 className="about-title">
               Built on Trust, Driven<br />

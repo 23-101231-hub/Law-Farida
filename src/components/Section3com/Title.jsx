@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 import "./Title.css";
 
-const Title = () => {
-    return ( 
-        <span class="about-pill">About Our Firm</span>
-     );
-}
- 
+const Title = (props) => {
+  return (
+    <span className={props.s}>
+      {props.text}
+    </span>
+  );
+};
+
 export default Title;
