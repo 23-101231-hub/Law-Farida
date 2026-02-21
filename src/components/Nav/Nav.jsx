@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Nav.css"
-import img1 from "../../assets/Law-logo-design-template-on-transparent-background-PNG 2.png"
+import img1 from "../../assets/logo.png"
 import img2 from "../..//assets/Icon.png"
 import Navtext from './Navtext';
 
