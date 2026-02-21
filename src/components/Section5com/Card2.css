@@ -1,0 +1,60 @@
+.case-left {
+    padding-right: 18px;
+  }
+  
+  .case-tag {
+    display: inline-block;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    color: #8f6f1f;
+    background: rgba(202, 164, 70, 0.14);
+    border: 1px solid rgba(202, 164, 70, 0.25);
+    margin-bottom: 10px;
+  }
+  
+  .case-name {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #141a22;
+  }
+  
+  .case-desc {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.7;
+    color: rgba(20, 26, 34, 0.62);
+    max-width: 560px;
+  }
+  
+  .case-right {
+    display: grid;
+    gap: 12px;
+  }
+  
+  .case-metric {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 10px;
+    align-items: center;
+  
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(202, 164, 70, 0.10);
+    border: 1px solid rgba(202, 164, 70, 0.16);
+  }
+  
+
+  
+  .metric-label {
+    font-size: 11px;
+    color: rgba(20, 26, 34, 0.55);
+    margin-bottom: 2px;
+  }
+  
+  .metric-value {
+    font-size: 12px;
+    font-weight: 800;
+    color: rgba(20, 26, 34, 0.88);
+  }
